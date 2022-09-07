@@ -11,8 +11,10 @@ public class BoardController {
 	}
 	
 	@GetMapping("/hello")
-	public String hello(String name) {
-		return "Hello : " + name;
+	public String hello(String name, String gift) {
+		String str = "Hello " + name +". ";
+		str += "This " + gift + " is for you.";
+		return str;
 	}
 
 }
